@@ -1,3 +1,4 @@
+#import libraries
 import pytube.request
 from pytube import YouTube
 from pytube.cli import on_progress
@@ -5,7 +6,7 @@ import time
 import random
 
 pytube.request.default_range_size = 500000
-
+#change your request size
 
 def typewrite(num1, num2, text):
     for c in text:
@@ -26,7 +27,7 @@ def completed(a, b ):
     for t in txt_list:
         typewrite(.05, .1, t)
         print('-' * 60)
-
+#change your typewriting speed
 
 url = input('Please Enter URL to Download: ')
 try:
@@ -35,4 +36,4 @@ try:
     typewrite(.05, .10,  'Downloading is starting...\n')
     stream.download()
 except:
-    print('Something went wrong!')
+    print('Issue/Problem has occured!')
